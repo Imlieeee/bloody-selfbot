@@ -390,4 +390,4 @@ async def logout(ctx):
     await ctx.message.delete()
     await Bloody.logout()
 
-Bloody.run(TOKEN, bot=False, reconnect=True)
+Bloody.run(process.env.TOKEN, bot=False, reconnect=True)
